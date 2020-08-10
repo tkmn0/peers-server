@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "license": "ISC",
+  "license": "MIT",
   "author": "n0",
   "main": "dist/index.js",
   "files": [
@@ -12,6 +12,7 @@
   "scripts": {
     "tsc": "tsc",
     "build": "npm run lint && rimraf dist && webpack",
+    "prepublishOnly": "npm run build",
     "lint": "eslint ./src/** --fix",
     "test": "jest"
   },

@@ -2,6 +2,8 @@
 const nodeExternals = require('webpack-node-externals');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const WebpackCopyDocumentsPlugin = require('./webpack-copy-documents-pugin');
 
 module.exports = {
   mode: 'production',
@@ -27,5 +29,6 @@ module.exports = {
     modules: ['node_modules'],
     extensions: ['.ts', '.js'],
   },
+  plugins: [new WebpackCopyDocumentsPlugin()],
   externals: [nodeExternals()],
 };
