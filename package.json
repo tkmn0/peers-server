@@ -20,6 +20,7 @@
   "scripts": {
     "tsc": "tsc",
     "build": "npm run lint && rimraf dist && webpack",
+    "clean": "rimraf dist",
     "prepublishOnly": "npm run build",
     "lint": "eslint ./src/** --fix",
     "test": "jest"
