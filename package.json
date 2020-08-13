@@ -1,8 +1,16 @@
 {
   "name": "peers-server",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "WebRTC full-mesh implementation for server side with socket.io written in Typescript",
+  "keywords": [
+    "webrtc",
+    "full-mesh",
+    "peers",
+    "signaling",
+    "typescript",
+    "ts",
+    "socket.io"
+  ],
   "license": "MIT",
   "author": "n0",
   "main": "dist/index.js",
